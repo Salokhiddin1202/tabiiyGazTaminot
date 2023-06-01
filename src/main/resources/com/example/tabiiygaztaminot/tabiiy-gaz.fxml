@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="1100.0" style="-fx-background-color: #b9a71d;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="43.0" layoutX="8.0" layoutY="7.0">
+               <image>
+                  <Image url="@../../../../../../../icons8-fire-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="76.0" layoutY="11.0" prefHeight="34.0" prefWidth="321.0" text="O'zbekiston Tabiiy gaz Sanoati" textFill="#181711">
+               <font>
+                  <Font name="Algerian" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="550.0" prefWidth="193.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="85.0" layoutX="55.0" layoutY="21.0">
+               <image>
+                  <Image url="@../../../../../../../icons8-person-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="142.0" fitWidth="165.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="tfQidirish" layoutX="22.0" layoutY="183.0" prefHeight="34.0" prefWidth="150.0" promptText="Qidiruv">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="35.0" layoutY="111.0" prefHeight="35.0" prefWidth="124.0" text="Profilingiz">
+               <font>
+                  <Font name="Algerian" size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="21.0" layoutY="247.0" mnemonicParsing="false" onAction="#onBtnUpdate" prefHeight="34.0" prefWidth="150.0" style="-fx-background-radius: 20 20 20 20; -fx-background-color: #3abfb1;" text="O'zgartirish" textFill="#081312">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="21.0" layoutY="307.0" mnemonicParsing="false" onAction="#onBtnDelete" prefHeight="34.0" prefWidth="150.0" style="-fx-background-radius: 20 20 20 20; -fx-background-color: #3abfb1;" text="O'chirish">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="21.0" layoutY="368.0" mnemonicParsing="false" onAction="#onBtnSave" prefHeight="34.0" prefWidth="150.0" style="-fx-background-radius: 20 20 20 20; -fx-background-color: #3abfb1;" text="Saqlash">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="27.0" layoutY="489.0" mnemonicParsing="false" onAction="#onBtnClose" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: #9e1616;" text="Chiqish" textFill="#201111">
+               <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font>
+            </Button>
+            <Line endX="108.79997253417969" endY="-20.199995040893555" layoutX="96.0" layoutY="21.0" startX="108.79998779296875" startY="529.4000244140625" />
+            <Line endX="89.59999084472656" endY="-1.52587890625E-5" layoutX="96.0" layoutY="156.0" startX="-82.90000915527344" startY="-1.52587890625E-5" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="-100.00006103515625" endY="550.4000244140625" layoutX="100.0" startX="-100.0" />
+            <TextField fx:id="tfId" layoutX="25.0" layoutY="22.0" prefHeight="38.0" prefWidth="150.0" promptText="Id">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfManzil" layoutX="24.0" layoutY="87.0" prefHeight="38.0" prefWidth="150.0" promptText="Manzil">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfHisoblagichRaqami" layoutX="25.0" layoutY="152.0" prefHeight="38.0" prefWidth="150.0" promptText="Hisoblagich Raqami">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfQarzdorlik" layoutX="25.0" layoutY="217.0" prefHeight="38.0" prefWidth="150.0" promptText="Qarzdorlik">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfSoliq" layoutX="25.0" layoutY="283.0" prefHeight="38.0" prefWidth="150.0" promptText="Soliq">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="25.0" layoutY="350.0" prefHeight="38.0" prefWidth="150.0" promptText="Muddati">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="44.0" layoutY="425.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #25bf2a;" text="Chop Etish" textFill="#09360a">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView prefHeight="549.6" prefWidth="693.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="63.19995725154877" text="Id" />
+                <TableColumn fx:id="manzil" prefWidth="138.39997100830078" text="Manzil" />
+                  <TableColumn fx:id="hisoblagichRaqami" prefWidth="135.20001220703125" text="Hisoblagich Raqami" />
+                  <TableColumn fx:id="qarzdorlik" prefWidth="120.0" text="Qarzdorlik" />
+                  <TableColumn fx:id="soliq" prefWidth="114.39993286132812" text="Soliq" />
+                  <TableColumn fx:id="muddati" prefWidth="124.0" text="Muddati" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
